@@ -1,0 +1,23 @@
+
+# 域名
+domain = "https://www.jianshu.com/"
+name = "简书"
+
+# 定义 HTTP 监听端口
+[http]
+host = ""
+port = 2019
+
+# 存储配置
+[storage]
+driver = "mysql"
+user = "root"
+password = "111111Aa"
+host = "localhost"
+port = 3306
+dbname = "jianshu"
+charset = "utf8mb4"
+
+[seo]
+keywords = "简书,简书官网,图文编辑软件,简书下载,图文创作,创作软件,原创社区,小说,散文,写作,阅读"
+description = "简书是一个优质的创作社区，在这里，你可以任性地创作，一篇短文、一张照片、一首诗、一幅画……我们相信，每个人都是生活中的艺术家，有着无穷的创造力。"
