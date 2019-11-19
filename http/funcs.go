@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"gitea.com/zsxq/jianshu/global"
+	"github.com/starichat/jianshu/global"
 )
 
 // funcMap 自定义模板函数

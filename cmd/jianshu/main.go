@@ -5,9 +5,9 @@ import (
 	"github.com/labstack/echo/v4/middleware"
 	"github.com/spf13/viper"
 
-	"gitea.com/zsxq/jianshu/global"
-	"gitea.com/zsxq/jianshu/http/controller"
-	"gitea.com/zsxq/jianshu/http/controller/admin"
+	"github.com/starichat/jianshu/global"
+	"github.com/starichat/jianshu/http/controller"
+	"github.com/starichat/jianshu/http/controller/admin"
 )
 
 var (
@@ -46,7 +46,7 @@ func main() {
 	admin.RegisterRoutes(adminGroup)
 
 	// 给默认端口
-	viper.SetDefault("http.port", "2019")
+	viper.SetDefault("http.port", "9999")
 	host := viper.GetString("http.host")
 	port := viper.GetString("http.port")
 

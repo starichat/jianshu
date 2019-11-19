@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<!--[if IE 6]><html class="ie lt-ie8"><![endif]-->
+<!--[if IE 7]><html class="ie lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="ie ie8"><![endif]-->
+<!--[if IE 9]><html class="ie ie9"><![endif]-->
+<!--[if !IE]><!--> <html> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+
+    <!-- Start of Baidu Transcode -->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="applicable-device" content="pc,mobile">
+    <meta name="MobileOptimized" content="width"/>
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="mobile-agent" content="format=html5;url={{.app.Domain}}">
+    <!-- End of Baidu Transcode -->
+
+    {{template "seo" .}}
+
+    <meta http-equiv="mobile-agent" content="format=html5; url={{.app.Domain}}">
+
+    <!-- Apple -->
+    <meta name="apple-mobile-web-app-title" content="{{.app.Name}}}">
+
+    <title>{{template "title" .}}</title>
+
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta name="csrf-token" content="u4/GiY5m0ZSBPmiXd7cpWhP9kpQAercykFAdg/OQwKsHvQJ5vQ3qJQqEHIDIdWsWsrvR2LiOVHMTiz0iVkMBjw==" />
+
+    <link rel="stylesheet" media="all" href="/static/css/base.css" />
+
+    {{template "css" .}}
+
+    <link href="/static/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="/static/img/apple-touch-icons/57.png" sizes="57x57" />
+    <link rel="apple-touch-icon-precomposed" href="/static/img/apple-touch-icons/72.png" sizes="72x72" />
+    <link rel="apple-touch-icon-precomposed" href="/static/img/apple-touch-icons/76.png" sizes="76x76" />
+    <link rel="apple-touch-icon-precomposed" href="/static/img/apple-touch-icons/114.png" sizes="114x114" />
+    <link rel="apple-touch-icon-precomposed" href="/static/img/apple-touch-icons/120.png" sizes="120x120" />
+    <link rel="apple-touch-icon-precomposed" href="/static/img/apple-touch-icons/152.png" sizes="152x152" />
+</head>
+
+<body lang="zh-CN" class="reader-black-font">
+<!-- 全局顶部导航栏 -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="width-limit">
+        <!-- 左上方 Logo -->
+        <a class="logo" href="/"><img src="/static/img/nav-logo.png" alt="Nav logo" /></a>
+
+        <!-- 右上角 -->
+        <!-- 登录显示写文章 -->
+        <a class="btn write-btn" target="_blank" href="/writer#/">
+            <i class="iconfont ic-write"></i>写文章
+        </a>
+        <!-- 如果用户登录，显示下拉菜单 -->
+        <div class="user">
+            <div data-hover="dropdown">
+                <a class="avatar" href="/u/700c85919fe4"><img src="//upload.jianshu.io/users/upload_avatars/7368941/3f743d54-cd74-444f-bf41-b49b96b69c09?imageMogr2/auto-orient/strip|imageView2/1/w/120/h/120" alt="120" /></a>
+            </div>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="/u/700c85919fe4">
+                        <i class="iconfont ic-navigation-profile"></i><span>我的主页</span>
+                    </a>
+                </li>
+                <li>
+                    <!-- TODO bookmarks_path -->
+                    <a href="/bookmarks">
+                        <i class="iconfont ic-navigation-mark"></i><span>收藏的文章</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/users/700c85919fe4/liked_notes">
+                        <i class="iconfont ic-navigation-like"></i><span>喜欢的文章</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/my/paid_notes">
+                        <i class="iconfont ic-paid"></i><span>已购内容</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/wallet">
+                        <i class="iconfont ic-navigation-wallet"></i><span>我的钱包</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/settings">
+                        <i class="iconfont ic-navigation-settings"></i><span>设置</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/faqs">
+                        <i class="iconfont ic-navigation-feedback"></i><span>帮助与反馈</span>
+                    </a>
+                </li>
+                <li>
+                    <a rel="nofollow" data-method="delete" href="/sign_out">
+                        <i class="iconfont ic-navigation-signout"></i><span>退出</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="navbar-jsds-enter">
+        </div>
+
+        <div id="view-mode-ctrl">
+        </div>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="nav navbar-nav">
+                    <li class="tab active">
+                        <a href="/">
+                            <span class="menu-text">发现</span><i class="iconfont ic-navigation-discover menu-icon"></i>
+                        </a>            </li>
+                    <li class="tab ">
+                        <a href="/subscriptions">
+                            <span class="menu-text">关注</span><i class="iconfont ic-navigation-follow menu-icon"></i>
+                        </a>            </li>
+                    <li class="tab notification v-notification-dropdown-menu ">
+                        <a class="notification-btn" href="/notifications" data-hover="dropdown">
+                            <span class="menu-text">消息</span>
+                            <i class="iconfont ic-navigation-notification menu-icon"></i>
+                            <span class="badge"></span>
+                        </a>
+                    </li>
+                    <li class="search">
+                        <form target="_blank" action="/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+                            <input type="text" name="q" id="q" value="" autocomplete="off" placeholder="搜索" class="search-input" />
+                            <a class="search-btn" href="javascript:void(null)"><i class="iconfont ic-search"></i></a>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container index">
+    {{template "content" .}}
+</div>
+
+<div data-vcomp="side-tool"></div>
+
+<footer class="container">
+    <div class="row">
+        <div class="col-xs-17 main">
+            <a target="_blank" href="http://www.jianshu.com/c/jppzD2">关于简书</a><em> · </em><a target="_blank" href="http://www.jianshu.com/contact">联系我们</a><em> · </em><a target="_blank" href="http://www.jianshu.com/c/bfeec2e13990">加入我们</a><em> · </em><a target="_blank" href="http://www.jianshu.com/p/fc1c113e5b6b">简书出版</a><em> · </em><a target="_blank" href="http://www.jianshu.com/press">品牌与徽标</a><em> · </em><a target="_blank" href="http://www.jianshu.com/faqs">帮助中心</a><em> · </em><a target="_blank" href="http://www.jianshu.com/p/cabc8fa39830">合作伙伴</a>      <div class="icp">
+                ©2012-2019 上海佰集信息科技有限公司 / 简书 / 沪ICP备11018329号-5 /
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402002252">
+                    <img src="/static/img/smrz.png" alt="Smrz" />
+                </a>
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402002252">沪公网安备31010402002252号 / </a>
+                <a target="_blank" href="http://www.shjbzx.cn/">
+                    <img src="/static/img/wxb.png" alt="Wxb" />
+                </a>        简书网举报电话：021-34770013 /
+                <a target="_blank" href="javascript:void(null)">
+                    <img src="/static/img/fanzha.jpg" alt="Fanzha" />
+                </a>        亲爱的市民朋友，上海警方反诈劝阻电话“962110”系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听 /
+                <a target="_blank" href="http://218.242.124.22:8081/businessCheck/verifKey.do?showType=extShow&amp;serial=9031000020171107081457000002158769-SAIC_SHOW_310000-20171115131223587837&amp;signData=MEQCIADWZ5aTcBeER5SOVp0ly+ElvKnwtjczum6Gi6wZ7/wWAiB9MAPM22hp947ZaBobux5PDkd0lfqoCOkVV7zjCYME6g==">
+                    <img src="/static/img/zggsrz.png" alt="Zggsrz" />
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="application/json" data-name="page-data">{"user_signed_in":true,"locale":"zh-CN","os":"mac","read_mode":"day","read_font":"font2","current_user":{"id":7368941,"nickname":"GO语言中文网","slug":"700c85919fe4","avatar":"http://upload.jianshu.io/users/upload_avatars/7368941/3f743d54-cd74-444f-bf41-b49b96b69c09","unread_counts":{"total":null},"is_member":false,"ads_free":false}}</script>
+
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(function(){
+        $('.user').on('mouseenter', function(){
+            $(this).children('.dropdown-menu').show();
+        });
+        $('.user').on('mouseleave', function(){
+            $(this).children('.dropdown-menu').hide();
+        });
+    });
+</script>
+
+{{/*<script src="/static/js/babel-polyfill.js" crossorigin="anonymous"></script>*/}}
+{{/*<script src="/static/js/web-base.js" crossorigin="anonymous"></script>*/}}
+{{/*<script src="/static/js/web.js" crossorigin="anonymous"></script>*/}}
+
+{{template "js" .}}
+
+</body>
+</html>

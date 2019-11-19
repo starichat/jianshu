@@ -8,8 +8,8 @@ import (
 
 	"github.com/labstack/echo/v4"
 
-	"gitea.com/zsxq/jianshu/global"
-	"gitea.com/zsxq/jianshu/model"
+	"github.com/starichat/jianshu/global"
+	"github.com/starichat/jianshu/model"
 )
 
 const (
