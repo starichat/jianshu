@@ -11,6 +11,7 @@ import (
 
 	"github.com/labstack/echo/v4"
 	"github.com/spf13/viper"
+	"github.com/starichat/jianshu/util"
 )
 
 var App = &app{}

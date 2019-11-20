@@ -6,7 +6,7 @@ name = "简书"
 # 定义 HTTP 监听端口
 [http]
 host = ""
-port = 2019
+port = 9999
 
 # 存储配置
 [storage]
