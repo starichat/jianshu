@@ -3,7 +3,7 @@ package controller
 import (
 	"github.com/labstack/echo/v4"
 
-	. "github.com/starichat/jianshu/http/"
+	. "github.com/starichat/jianshu/http"
 )
 
 type IndexController struct{}
